@@ -14,5 +14,5 @@ As part of the data science team, our task includes:
 I don't know about you but, I'd love to know the estimated cost of rent in a place like Maryland, Lagos.
 
 Where would you love to find a house whenever you find yourself in Lagos? 
-Maybe I could help with the estimated rental price.
 
+Maybe I could help with the estimated rental price.
