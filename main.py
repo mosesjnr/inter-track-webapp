@@ -22,7 +22,7 @@ model = joblib.load("joblib_model.sav")
 def read_root():
     return {"Hello": "Stutern"}
 
-@app.post("/predict")
+@app.get("/predict")
 def predict_rent(data: Rent):
     data = data.dict()
     rooms = data['rooms']
