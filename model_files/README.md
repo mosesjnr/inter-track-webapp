@@ -2,5 +2,5 @@
 This folder contains the following:
 - Webscraping file
 - Data analysis file
-- [Initial] Model building file
-- Model file (catboost)
+- Model building file (cat_boost)
+- Final Model file (inter_track_model)
