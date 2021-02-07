@@ -27,8 +27,8 @@ def predict_rent(data: Rent):
     data = data.dict()
     rooms = data['rooms']
     location = data['location']
-    result = model.predict([rooms, location])
-    result = np.exp(result)
+    result = np.exp(model.predict([rooms, location]))
+    result = np.round(result, 2)
     
     return {'Expected rent is': result}
 
