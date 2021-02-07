@@ -1,6 +1,5 @@
 # 1. Library imports
 import uvicorn
-import pickle
 import joblib
 import numpy as np
 from fastapi import FastAPI
@@ -32,17 +31,7 @@ def predict_rent(data: Rent):
     
     return {'Expected rent is': result}
 
-    '''
-    if result:
-        return {"statusCode": 200,
-                "body": {"Expected rent": result}}
-    else:
-        return {"status": 404,
-                "body": {"Message": "Are you sure you're using the right data ?"}}
-                '''
-                
 
-    
 # 4. Run the API with uvicorn
 #    Will run on http://127.0.0.1:8000
 if __name__ == '__main__':
