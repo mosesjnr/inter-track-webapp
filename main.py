@@ -30,7 +30,7 @@ def predict_rent(data: Rent):
     result = np.exp(model.predict([rooms, location]))
     result = np.round(result, 2)
     
-    return {'Expected rent is': result}
+    return {'Rent': result}
 
 app.add_middleware(
     CORSMiddleware,
