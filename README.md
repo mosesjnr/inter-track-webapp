@@ -1,8 +1,10 @@
 # inter-track-webapp
 
-The task is to build a webapp for rent prediction in Lagos.
+The project is an inter-track project that involves collaboration between the Software team, UI/UX team and the Data Science team for which i was a part of.
 
-As an inter-track project, it involves the UI/UX team, SWE and data science group.
+It involves building an application that can predict the rent of houses in Lagos State, Nigeria.
+
+We limited our scope to location and number of bedrooms(1-3rooms)
 
 As part of the data science team, our task includes:
 - scrape data from two property sites in Lagos
