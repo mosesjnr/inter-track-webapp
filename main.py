@@ -4,6 +4,7 @@ import joblib
 import numpy as np
 from fastapi import FastAPI
 from pydantic import BaseModel
+from starlette.middleware.cors import CORSMiddleware
 
 
 class Rent(BaseModel):
@@ -31,6 +32,13 @@ def predict_rent(data: Rent):
     
     return {'Expected rent is': result}
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    #allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # 4. Run the API with uvicorn
 #    Will run on http://127.0.0.1:8000
